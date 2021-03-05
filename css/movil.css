@@ -1,0 +1,47 @@
+#enlaces{
+	display: none;
+}
+#secciones{
+	top: 50px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+#secciones li{
+	width: 33.333333333333333333333%;
+}
+#desplegable{
+	top: 5px;
+	right: 5px;
+}
+.secc{
+	top: 100px;
+}
+#indice li{
+	margin: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#indice li ol{
+	padding-left: 10px;
+}
+#cdestino{
+	padding-bottom: 7px;
+}
+.destino{
+	margin: 7px;
+}
+.dcontenedor{
+	display: none;
+}
+.dacciones{
+	height: 50px;
+	width: 100%;
+	float: top;
+}
+.dtitulo{
+	text-align: center;
+}
+.dultimo{
+	margin-bottom: 100px;
+}

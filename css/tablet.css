@@ -1,0 +1,39 @@
+#menu{
+	display: none;
+}
+#desplegable{
+	display: none;
+}
+#secciones{
+	top: 0px;
+	left: 110px;
+}
+#secciones li{
+	width: 100px;
+}
+#desplegable{
+	top: 5px;
+	right: 5px;
+}
+.secc{
+	top: 50px;
+}
+#indice li{
+	margin: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+#indice li ol{
+	padding-left: 50px;
+}
+#cdestino{
+	padding-bottom: 50px;
+}
+.destino{
+	margin: 50px;
+}
+.dacciones{
+	height: 250px;
+	width: 200px;
+	float: left;
+}

@@ -1,0 +1,36 @@
+.destino{
+	display: block;
+	padding: 25px;
+	background-color: #FFFFFF;
+	text-align: justify;
+	min-height: 250px;
+}
+.dacciones{
+	margin-right: 25px;
+	margin-bottom: 20px;
+}
+.daccion{
+	width: 30px;
+	margin: 10px;
+	display: inline-block;
+	cursor: pointer;
+}
+.dcontenedor{
+	width:200px;
+	height: 200px;
+	background-color: #000000;
+	display: table;
+}
+.dcontenido{
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+.destino div img{
+	max-width: 200px;
+	max-height: 200px;
+}
+.dtitulo{
+	font-family: 'Lobster', helvetica;
+}

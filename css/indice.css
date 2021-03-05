@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700&subset=latin,latin-ext);
+#indice{
+	padding: 0px;
+}
+#indice li{
+	padding: 10px;
+	max-width: 100%;
+	font-family: 'Roboto Slab', helvetica;
+	font-size: 20px;
+	font-weight: bold;
+	list-style: none;
+}
+#indice li ol li{
+	font-family: 'Roboto', helvetica;
+	font-size: 18px;
+	font-weight: normal;
+	margin-left: 0px;
+}

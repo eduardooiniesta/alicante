@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin-ext,latin);
+@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext);
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', helvetica;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+div{
+	margin: 0px;
+	padding: 0px;
+}
+img{
+	cursor: pointer;
+}
+iframe{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+.oculto{
+	visibility: hidden;
+}
+.visible{
+	visibility: visible;
+}
+.fuera{
+	left: -100%;
+}
+.dentro{
+	left: 0px;
+}
+#secciones li{
+	-webkit-transition-duration: 0.25s;
+	-moz-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}

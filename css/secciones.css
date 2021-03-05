@@ -1,0 +1,12 @@
+.secc{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 0;
+}
+.sel{
+	left: 0px;
+}
+.nosel{
+	left: -100%;
+}

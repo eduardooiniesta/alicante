@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title>Alicante</title>
+	<meta content='width=device-width, user-scalable=0' name='viewport' />
+	<meta charset="utf-8">
+	<link id="cssvalores" rel="stylesheet" type="text/css" href="css/valores.css">
+	<link id="csscolores" rel="stylesheet" type="text/css" href="css/colores.css">
+	<link id="cssnav" rel="stylesheet" type="text/css" href="css/nav.css">
+	<link id="csscuerpo" rel="stylesheet" type="text/css" href="css/secciones.css">
+	<link id="cssdispositivo" rel="stylesheet" type="text/css" href="css/tablet.css">
+</head>
+<body onclick="javascript:Desplegable('fuera');" onresize="javascript:Dispositivo();">
+	<div id="nav" class="cprincipal">
+		<div id="titulo">Alicante</div>
+		<ul id="secciones" class="cprincipal">
+			<li id="p1" class="cpul" onclick="javascript:Secciones('p1');">Lugares
+			<li id="p2" class="cnopul" onclick="javascript:Secciones('p2');">Restauración
+			<li id="p3" class="cnopul" onclick="javascript:Secciones('p3');">Fiestas
+		</ul>
+		<div id="enlaces">
+			<a href="http://www.alicante.es/es" target="_blank"><img src="img/ayuntamiento.png"></a>
+			<a href="http://www.alicante.subus.es/" target="_blank"><img src="img/transporte.png"></a>
+			<img src="img/mapa.png" onclick="javascript:CMapa();">
+		</div>
+		<img id="menu" src="img/menu.png" onclick="javascript:Desplegable('dentro');">
+		<ul id="desplegable" class="oculto">
+			<a href="http://www.alicante.es/es" target="_blank"><li>Ayuntamiento</li></a>
+			<a href="http://www.alicante.subus.es/" target="_blank"><li>Transporte</li></a>
+			<li onclick="javascript:CMapa();" style="cursor: pointer;">Mapa</li>
+		</ul>
+	</div>
+	<iframe src="lugares/index.html" id="seccp1" class="secc sel">
+	</iframe>
+	<iframe src="restauracion/index.html" id="seccp2" class="secc nosel">
+	</iframe>
+	<iframe src="fiestas/index.html" id="seccp3" class="secc nosel">
+	</iframe>
+</body>
+</html>
+<script type="text/javascript">
+	Dispositivo();
+	function Dispositivo(){
+		var ancho = window.innerWidth ? window.innerWidth : document.body.offsetWidth ;
+		if(ancho < 600){
+			document.getElementById('cssdispositivo').href = "css/movil.css";
+		}
+		else{
+			document.getElementById('cssdispositivo').href = "css/tablet.css";
+		}
+	}
+	function Secciones(seccion){
+		if(document.getElementById(seccion).className == "cnopul"){
+			switch(seccion){
+			    case 'p1':
+					document.getElementById('p1').className = "cpul";
+					document.getElementById('p2').className = "cnopul";
+					document.getElementById('p3').className = "cnopul";
+					document.getElementById('seccp1').className = "secc sel";
+					document.getElementById('seccp2').className = "secc nosel";
+					document.getElementById('seccp3').className = "secc nosel";
+			        break;
+			    case 'p2':
+					document.getElementById('p1').className = "cnopul";
+					document.getElementById('p2').className = "cpul";
+					document.getElementById('p3').className = "cnopul";
+					document.getElementById('seccp1').className = "secc nosel";
+					document.getElementById('seccp2').className = "secc sel";
+					document.getElementById('seccp3').className = "secc nosel";
+			        break;
+			    case 'p3':
+					document.getElementById('p1').className = "cnopul";
+					document.getElementById('p2').className = "cnopul";
+					document.getElementById('p3').className = "cpul";
+					document.getElementById('seccp1').className = "secc nosel";
+					document.getElementById('seccp2').className = "secc nosel";
+					document.getElementById('seccp3').className = "secc sel";
+			        break;
+			}
+		}
+		else{
+
+		}
+	}
+	function Desplegable(accion){
+		if(accion == "dentro"){
+			document.getElementById('csscuerpo').href = "css/nosecciones.css";
+			document.getElementById('desplegable').className = "visible";
+			setTimeout( function(){
+				document.getElementById('desplegable').className = "visible retardado";
+      		},10);
+		}
+		else if(accion == "fuera"){
+			if(document.getElementById('desplegable').className == "visible retardado"){
+				setTimeout( function(){
+				document.getElementById('csscuerpo').href = "css/secciones.css";
+					document.getElementById('desplegable').className = "oculto";
+      			},100);
+			}
+		}
+	}
+	function CMapa(){
+		var destino = prompt('Introduzca el tipo de destinos: ');
+		var vacio;
+		if(destino == vacio){
+		}else{
+		parent.window.location = "https://www.google.es/maps/search/" + destino + " Alicante";
+		}
+	}
+</script>

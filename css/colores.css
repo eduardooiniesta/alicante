@@ -1,0 +1,41 @@
+body{
+	background-color: #FAFAFA;
+}
+.cprincipal{
+	background-color: #2979FF;
+}
+#nav{
+	color: #FFFFFF;
+}
+.cpul{
+	border-bottom: 5px solid #4FC3F7;
+}
+.cnopul{
+	border-bottom: 5px solid #2979FF;
+}
+#desplegable{
+	border: 1px solid #E0E0E0;
+}
+#desplegable li{
+	background-color: #F5F5F5;
+	color: #212121;
+}
+#indice li{
+	background-color: #FFFFFF;
+	border: 1px solid #E0E0E0;
+}
+.html{
+	color: #E45126;
+}
+.css{
+	color: #1673B6;
+}
+.js{
+	color: #E4A227;
+}
+.destino{
+	border: 1px solid #E0E0E0;
+}
+.restaurante{
+	border: 1px solid #E0E0E0;
+}

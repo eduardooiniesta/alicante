@@ -1,0 +1,71 @@
+#nav{
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+#titulo{
+	width: 100px;
+	line-height: 50px;
+	position: fixed;
+	top: 0px;
+	left: 10px;
+	font-size: 18px;
+}
+#secciones{
+	margin: 0px;
+	padding: 0px;
+	height: 50px;
+	position: fixed;
+	list-style: none;
+}
+#secciones li{
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+	height: 45px;
+	line-height: 50px;
+	text-align: center;
+	display: inline-block;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+#enlaces{
+	height: 50px;
+	position: fixed;
+	top: 0px;
+	right: 5px;
+}
+#enlaces img{
+	height: 30px;
+	margin: 10px;
+}
+#menu{
+	height: 30px;
+	margin: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+}
+#desplegable{
+	min-width: 150px;
+	position: fixed;
+	border-radius: 3px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	z-index: +100;
+}
+#desplegable li{
+	height: 50px;
+	margin: 0px;
+	padding: 0px;
+	min-width: 150px;
+	line-height: 50px;
+	padding-left: 10px;
+	text-align: left;
+}
